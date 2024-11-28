@@ -15,7 +15,7 @@ class MapViewController: UIViewController {
     private let mapViewModel = MapViewModel(locationService: LocationService())
     private var cancellables = Set<AnyCancellable>()
     
-    lazy var mapView = NMFMapView(frame: view.frame)
+    lazy var naverMapView = NMFNaverMapView(frame: view.frame)
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -35,7 +35,6 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
         
         configureUI()
-//        setCombineData()
     }
     
     func configureUI() {
@@ -43,19 +42,23 @@ class MapViewController: UIViewController {
     }
     
     func configureMap() {
-        view.addSubview(mapView)
+        naverMapView.mapView.setLayerGroup(NMF_LAYER_GROUP_BUILDING, isEnabled: true)
+        naverMapView.mapView.isIndoorMapEnabled = true
+        naverMapView.mapView.positionMode = .compass
+        naverMapView.showLocationButton = true
+        view.addSubview(naverMapView)
     }
     
     func setLocationInfo() {
-        mapViewModel.currentLocation.sink { [weak self] location in
+        mapViewModel.movedCurrentLocation.sink { [weak self] location in
             guard let self = self, let location = location else { return }
             
             let cameraInfo = NMFCameraUpdate(scrollTo: NMGLatLng(lat: location.coordinate.latitude, lng: location.coordinate.longitude))
-            self.mapView.moveCamera(cameraInfo)
+            naverMapView.mapView.moveCamera(cameraInfo)
             
             let marker = NMFMarker()
             marker.position = NMGLatLng(lat: location.coordinate.latitude, lng: location.coordinate.longitude)
-            marker.mapView = self.mapView
+            marker.mapView = self.naverMapView.mapView
         }
         .store(in: &cancellables)
     }

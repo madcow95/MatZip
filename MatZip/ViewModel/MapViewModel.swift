@@ -11,13 +11,14 @@ import Combine
 
 class MapViewModel: NSObject {
     private let locationService: LocationService
-    var currentLocation: AnyPublisher<CLLocation?, Never> {
-        return locationService.currentLocation
+    var movedCurrentLocation: AnyPublisher<CLLocation?, Never> {
+        return locationService.movingCurrentLocation
     }
     
     init(locationService: LocationService) {
         self.locationService = locationService
         super.init()
+        
     }
     
     func requestLocationAuth(completion: @escaping (Bool) -> Void) {

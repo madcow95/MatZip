@@ -10,14 +10,14 @@ import Combine
 
 class LocationService: NSObject, LocationManager {
     private let locationManager = CLLocationManager()
-    private let locationSubject = CurrentValueSubject<CLLocation?, Never>(nil)
+    private let movingLocationSubject = CurrentValueSubject<CLLocation?, Never>(nil)
     private var authResult: ((Bool) -> Void)?
     
     var locationAuthStatus: CLAuthorizationStatus {
         locationManager.authorizationStatus
     }
-    var currentLocation: AnyPublisher<CLLocation?, Never> {
-        locationSubject.eraseToAnyPublisher()
+    var movingCurrentLocation: AnyPublisher<CLLocation?, Never> {
+        movingLocationSubject.eraseToAnyPublisher()
     }
     
     override init() {
@@ -67,7 +67,8 @@ extension LocationService: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }
-        locationSubject.send(location)
+        movingLocationSubject.send(location)
+        locationManager.stopUpdatingLocation()
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {

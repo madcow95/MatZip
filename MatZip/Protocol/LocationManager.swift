@@ -10,6 +10,6 @@ import Combine
 
 protocol LocationManager {
     var locationAuthStatus: CLAuthorizationStatus { get }
-    var currentLocation: AnyPublisher<CLLocation?, Never> { get }
+    var movingCurrentLocation: AnyPublisher<CLLocation?, Never> { get }
     func requestLocationAuth(completion: @escaping (Bool) -> Void)
 }
