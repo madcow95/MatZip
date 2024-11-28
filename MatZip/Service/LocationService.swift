@@ -23,6 +23,7 @@ class LocationService: NSObject, LocationManager {
     override init() {
         super.init()
         locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
     }
     
     func getLocationManager() -> CLLocationManager {
@@ -35,12 +36,17 @@ class LocationService: NSObject, LocationManager {
         switch self.locationAuthStatus {
         case .authorizedAlways, .authorizedWhenInUse:
             completion(true)
-        case .denied, .restricted, .notDetermined:
-            locationManager.requestWhenInUseAuthorization()
+        case .denied, .restricted:
             completion(false)
+        case .notDetermined:
+            locationManager.requestWhenInUseAuthorization()
         @unknown default:
             completion(false)
         }
+    }
+    
+    func getCurrentLocation() {
+        locationManager.requestLocation()
     }
 }
 
@@ -57,5 +63,14 @@ extension LocationService: CLLocationManagerDelegate {
         @unknown default:
             authResult?(false)
         }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let location = locations.last else { return }
+        locationSubject.send(location)
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("위치 업데이트 오류: \(#function)\n\(error.localizedDescription)")
     }
 }
