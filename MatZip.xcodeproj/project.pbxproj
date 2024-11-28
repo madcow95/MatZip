@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CDBD3F882CF6FC430032E343 /* NMapsMap in Frameworks */ = {isa = PBXBuildFile; productRef = CDBD3F872CF6FC430032E343 /* NMapsMap */; };
+		CDBD3F902CF6FD020032E343 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CDBD3F8F2CF6FD020032E343 /* SnapKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDBD3F692CF6FBB60032E343 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDBD3F472CF6FBB50032E343 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDBD3F4E2CF6FBB50032E343;
+			remoteInfo = MatZip;
+		};
+		CDBD3F732CF6FBB60032E343 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDBD3F472CF6FBB50032E343 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDBD3F4E2CF6FBB50032E343;
+			remoteInfo = MatZip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CDBD3F4F2CF6FBB50032E343 /* MatZip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatZip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDBD3F682CF6FBB60032E343 /* MatZipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatZipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDBD3F722CF6FBB60032E343 /* MatZipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatZipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CDBD3F7A2CF6FBB60032E343 /* Exceptions for "MatZip" folder in "MatZip" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = CDBD3F4E2CF6FBB50032E343 /* MatZip */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CDBD3F512CF6FBB50032E343 /* MatZip */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CDBD3F7A2CF6FBB60032E343 /* Exceptions for "MatZip" folder in "MatZip" target */,
+			);
+			path = MatZip;
+			sourceTree = "<group>";
+		};
+		CDBD3F6B2CF6FBB60032E343 /* MatZipTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MatZipTests;
+			sourceTree = "<group>";
+		};
+		CDBD3F752CF6FBB60032E343 /* MatZipUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MatZipUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDBD3F4C2CF6FBB50032E343 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDBD3F882CF6FC430032E343 /* NMapsMap in Frameworks */,
+				CDBD3F902CF6FD020032E343 /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDBD3F652CF6FBB60032E343 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDBD3F6F2CF6FBB60032E343 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDBD3F462CF6FBB50032E343 = {
+			isa = PBXGroup;
+			children = (
+				CDBD3F512CF6FBB50032E343 /* MatZip */,
+				CDBD3F6B2CF6FBB60032E343 /* MatZipTests */,
+				CDBD3F752CF6FBB60032E343 /* MatZipUITests */,
+				CDBD3F502CF6FBB50032E343 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDBD3F502CF6FBB50032E343 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDBD3F4F2CF6FBB50032E343 /* MatZip.app */,
+				CDBD3F682CF6FBB60032E343 /* MatZipTests.xctest */,
+				CDBD3F722CF6FBB60032E343 /* MatZipUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDBD3F4E2CF6FBB50032E343 /* MatZip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDBD3F7B2CF6FBB60032E343 /* Build configuration list for PBXNativeTarget "MatZip" */;
+			buildPhases = (
+				CDBD3F4B2CF6FBB50032E343 /* Sources */,
+				CDBD3F4C2CF6FBB50032E343 /* Frameworks */,
+				CDBD3F4D2CF6FBB50032E343 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CDBD3F512CF6FBB50032E343 /* MatZip */,
+			);
+			name = MatZip;
+			packageProductDependencies = (
+				CDBD3F872CF6FC430032E343 /* NMapsMap */,
+				CDBD3F8F2CF6FD020032E343 /* SnapKit */,
+			);
+			productName = MatZip;
+			productReference = CDBD3F4F2CF6FBB50032E343 /* MatZip.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CDBD3F672CF6FBB60032E343 /* MatZipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDBD3F802CF6FBB60032E343 /* Build configuration list for PBXNativeTarget "MatZipTests" */;
+			buildPhases = (
+				CDBD3F642CF6FBB60032E343 /* Sources */,
+				CDBD3F652CF6FBB60032E343 /* Frameworks */,
+				CDBD3F662CF6FBB60032E343 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDBD3F6A2CF6FBB60032E343 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CDBD3F6B2CF6FBB60032E343 /* MatZipTests */,
+			);
+			name = MatZipTests;
+			packageProductDependencies = (
+			);
+			productName = MatZipTests;
+			productReference = CDBD3F682CF6FBB60032E343 /* MatZipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CDBD3F712CF6FBB60032E343 /* MatZipUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDBD3F832CF6FBB60032E343 /* Build configuration list for PBXNativeTarget "MatZipUITests" */;
+			buildPhases = (
+				CDBD3F6E2CF6FBB60032E343 /* Sources */,
+				CDBD3F6F2CF6FBB60032E343 /* Frameworks */,
+				CDBD3F702CF6FBB60032E343 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDBD3F742CF6FBB60032E343 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CDBD3F752CF6FBB60032E343 /* MatZipUITests */,
+			);
+			name = MatZipUITests;
+			packageProductDependencies = (
+			);
+			productName = MatZipUITests;
+			productReference = CDBD3F722CF6FBB60032E343 /* MatZipUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDBD3F472CF6FBB50032E343 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					CDBD3F4E2CF6FBB50032E343 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					CDBD3F672CF6FBB60032E343 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = CDBD3F4E2CF6FBB50032E343;
+					};
+					CDBD3F712CF6FBB60032E343 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = CDBD3F4E2CF6FBB50032E343;
+					};
+				};
+			};
+			buildConfigurationList = CDBD3F4A2CF6FBB50032E343 /* Build configuration list for PBXProject "MatZip" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDBD3F462CF6FBB50032E343;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CDBD3F862CF6FC430032E343 /* XCRemoteSwiftPackageReference "SPM-NMapsMap" */,
+				CDBD3F8E2CF6FD020032E343 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CDBD3F502CF6FBB50032E343 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDBD3F4E2CF6FBB50032E343 /* MatZip */,
+				CDBD3F672CF6FBB60032E343 /* MatZipTests */,
+				CDBD3F712CF6FBB60032E343 /* MatZipUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDBD3F4D2CF6FBB50032E343 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDBD3F662CF6FBB60032E343 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDBD3F702CF6FBB60032E343 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDBD3F4B2CF6FBB50032E343 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDBD3F642CF6FBB60032E343 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDBD3F6E2CF6FBB60032E343 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDBD3F6A2CF6FBB60032E343 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDBD3F4E2CF6FBB50032E343 /* MatZip */;
+			targetProxy = CDBD3F692CF6FBB60032E343 /* PBXContainerItemProxy */;
+		};
+		CDBD3F742CF6FBB60032E343 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDBD3F4E2CF6FBB50032E343 /* MatZip */;
+			targetProxy = CDBD3F732CF6FBB60032E343 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CDBD3F7C2CF6FBB60032E343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N954XS4D2X;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MatZip/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "항상 위치 접근이 가능한지 확인(상세 설명 작성해야함)";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "사용자의 위치권한이 필요합니다.(상세 설명 작성해야함)";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.madcow.MatZip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CDBD3F7D2CF6FBB60032E343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N954XS4D2X;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MatZip/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "항상 위치 접근이 가능한지 확인(상세 설명 작성해야함)";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "사용자의 위치권한이 필요합니다.(상세 설명 작성해야함)";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.madcow.MatZip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CDBD3F7E2CF6FBB60032E343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CDBD3F7F2CF6FBB60032E343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDBD3F812CF6FBB60032E343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N954XS4D2X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.madcow.MatZipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MatZip.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MatZip";
+			};
+			name = Debug;
+		};
+		CDBD3F822CF6FBB60032E343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N954XS4D2X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.madcow.MatZipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MatZip.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MatZip";
+			};
+			name = Release;
+		};
+		CDBD3F842CF6FBB60032E343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N954XS4D2X;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.madcow.MatZipUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MatZip;
+			};
+			name = Debug;
+		};
+		CDBD3F852CF6FBB60032E343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N954XS4D2X;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.madcow.MatZipUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MatZip;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDBD3F4A2CF6FBB50032E343 /* Build configuration list for PBXProject "MatZip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDBD3F7E2CF6FBB60032E343 /* Debug */,
+				CDBD3F7F2CF6FBB60032E343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDBD3F7B2CF6FBB60032E343 /* Build configuration list for PBXNativeTarget "MatZip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDBD3F7C2CF6FBB60032E343 /* Debug */,
+				CDBD3F7D2CF6FBB60032E343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDBD3F802CF6FBB60032E343 /* Build configuration list for PBXNativeTarget "MatZipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDBD3F812CF6FBB60032E343 /* Debug */,
+				CDBD3F822CF6FBB60032E343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDBD3F832CF6FBB60032E343 /* Build configuration list for PBXNativeTarget "MatZipUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDBD3F842CF6FBB60032E343 /* Debug */,
+				CDBD3F852CF6FBB60032E343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CDBD3F862CF6FC430032E343 /* XCRemoteSwiftPackageReference "SPM-NMapsMap" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/navermaps/SPM-NMapsMap";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.20.0;
+			};
+		};
+		CDBD3F8E2CF6FD020032E343 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CDBD3F872CF6FC430032E343 /* NMapsMap */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDBD3F862CF6FC430032E343 /* XCRemoteSwiftPackageReference "SPM-NMapsMap" */;
+			productName = NMapsMap;
+		};
+		CDBD3F8F2CF6FD020032E343 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDBD3F8E2CF6FD020032E343 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CDBD3F472CF6FBB50032E343 /* Project object */;
+}
