@@ -26,7 +26,7 @@ class MapViewController: UIViewController {
                 self.setLocationInfo()
                 self.mapViewModel.updateLocation()
             } else {
-                self.showAlert(title: "위치 권한 필요", msg: "사용자의 위치 확인을 위해 위치 권한이 필요합니다.")
+                self.showAlert(title: "위치 권한 필요", msg: "사용자의 위치 확인을 위해 위치 권한이 필요합니다.\n설정화면에서 위치 권한을 허용해주세요.")
             }
         }
     }
