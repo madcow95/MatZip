@@ -15,7 +15,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = UINavigationController(rootViewController: MapViewController())
+        
+        let tabController = UITabBarController()
+        let mapView = UINavigationController(rootViewController: MapViewController())
+        mapView.tabBarItem = UITabBarItem(title: "홈", image: UIImage(systemName: "house.fill"), selectedImage: nil)
+        
+        let communityView = UINavigationController(rootViewController: CommunityViewController())
+        communityView.tabBarItem = UITabBarItem(title: "커뮤니티", image: UIImage(systemName: "shareplay"), selectedImage: nil)
+        
+        let settingView = UINavigationController(rootViewController: CommunityViewController())
+        settingView.tabBarItem = UITabBarItem(title: "내 정보", image: UIImage(systemName: "person.fill"), selectedImage: nil)
+
+        tabController.viewControllers = [mapView, communityView, settingView]
+        tabController.tabBar.tintColor = .systemBlue
+        tabController.tabBar.backgroundColor = .white
+        
+        window.rootViewController = UINavigationController(rootViewController: tabController)
         self.window = window
         window.makeKeyAndVisible()
     }
