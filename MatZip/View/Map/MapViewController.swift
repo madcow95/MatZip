@@ -14,7 +14,7 @@ class MapViewController: UIViewController {
     
     private let mapViewModel = MapViewModel(locationService: LocationService())
     private var cancellables = Set<AnyCancellable>()
-    private lazy var naverMapView = NMFNaverMapView(frame: view.frame)
+    private lazy var naverMapView = NMFNaverMapView()
     private let searchTextField: UITextField = {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
@@ -30,6 +30,24 @@ class MapViewController: UIViewController {
         textField.isUserInteractionEnabled = true
         
         return textField
+    }()
+    private let categories = ["전체", "한식", "중식", "일식", "양식", "카페", "aaa", "bbb", "ccc", "ddd", "eee", "fff"]
+    private lazy var categoryButtons: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.minimumInteritemSpacing = 10
+        layout.minimumLineSpacing = 10
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+        
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.backgroundColor = .clear
+        collectionView.showsHorizontalScrollIndicator = false
+        collectionView.register(CategoryCell.self, forCellWithReuseIdentifier: "CategoryCell")
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.isScrollEnabled = true
+        
+        return collectionView
     }()
     
     override func viewWillAppear(_ animated: Bool) {
@@ -54,24 +72,44 @@ class MapViewController: UIViewController {
     
     func configureUI() {
         configureMap()
+        
+        view.bringSubviewToFront(searchTextField)
+        view.bringSubviewToFront(categoryButtons)
+        
         configureTextField()
+        configureCategoryButtons()
     }
     
     func configureMap() {
+        view.addSubview(naverMapView)
+        
+        naverMapView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
+        
         naverMapView.mapView.setLayerGroup(NMF_LAYER_GROUP_BUILDING, isEnabled: true)
         naverMapView.mapView.isIndoorMapEnabled = true
         naverMapView.mapView.positionMode = .compass
         naverMapView.showLocationButton = true
-        view.addSubview(naverMapView)
     }
     
     func configureTextField() {
-        naverMapView.addSubview(searchTextField)
+        view.addSubview(searchTextField)
         
         searchTextField.snp.makeConstraints {
             $0.top.equalTo(view.snp.top).offset(60)
             $0.left.equalTo(view.snp.left).offset(10)
             $0.right.equalTo(view.snp.right).offset(-10)
+        }
+    }
+    
+    func configureCategoryButtons() {
+        view.addSubview(categoryButtons)
+        
+        categoryButtons.snp.makeConstraints {
+            $0.top.equalTo(searchTextField.snp.bottom).offset(8)
+            $0.leading.trailing.equalToSuperview()
+            $0.height.equalTo(35)
         }
     }
     
@@ -88,5 +126,28 @@ class MapViewController: UIViewController {
 //            marker.mapView = self.naverMapView.mapView
         }
         .store(in: &cancellables)
+    }
+}
+
+extension MapViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return categories.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCell", for: indexPath) as? CategoryCell else {
+            return UICollectionViewCell()
+        }
+        
+        cell.configureUI(text: categories[indexPath.row])
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let category = categories[indexPath.item]
+        let width = category.size(withAttributes: [.font: UIFont.systemFont(ofSize: 14)]).width + 40
+        
+        return CGSize(width: width, height: 35)
     }
 }
