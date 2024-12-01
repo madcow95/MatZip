@@ -21,10 +21,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         mapView.tabBarItem = UITabBarItem(title: "홈", image: UIImage(systemName: "house.fill"), selectedImage: nil)
         
         let communityView = UINavigationController(rootViewController: CommunityViewController())
-        communityView.tabBarItem = UITabBarItem(title: "커뮤니티", image: UIImage(systemName: "person.fill"), selectedImage: nil)
+        communityView.tabBarItem = UITabBarItem(title: "커뮤니티", image: UIImage(systemName: "shareplay"), selectedImage: nil)
+        
+        let settingView = UINavigationController(rootViewController: CommunityViewController())
+        settingView.tabBarItem = UITabBarItem(title: "내 정보", image: UIImage(systemName: "person.fill"), selectedImage: nil)
 
-        tabController.viewControllers = [mapView, communityView]
-        tabController.tabBar.tintColor = .systemGreen
+        tabController.viewControllers = [mapView, communityView, settingView]
+        tabController.tabBar.tintColor = .systemBlue
         tabController.tabBar.backgroundColor = .white
         
         window.rootViewController = UINavigationController(rootViewController: tabController)

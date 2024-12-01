@@ -14,8 +14,23 @@ class MapViewController: UIViewController {
     
     private let mapViewModel = MapViewModel(locationService: LocationService())
     private var cancellables = Set<AnyCancellable>()
-    
-    lazy var naverMapView = NMFNaverMapView(frame: view.frame)
+    private lazy var naverMapView = NMFNaverMapView(frame: view.frame)
+    private let searchTextField: UITextField = {
+        let textField = UITextField()
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.placeholder = "검색어를 입력해주세요."
+        textField.leftViewMode = .always
+        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 0))
+        textField.backgroundColor = .white
+        textField.heightAnchor.constraint(equalToConstant: 35).isActive = true
+        textField.layer.cornerRadius = 10
+        textField.layer.borderWidth = 1
+        textField.layer.borderColor = UIColor.lightGray.cgColor
+        textField.isEnabled = true
+        textField.isUserInteractionEnabled = true
+        
+        return textField
+    }()
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -39,6 +54,7 @@ class MapViewController: UIViewController {
     
     func configureUI() {
         configureMap()
+        configureTextField()
     }
     
     func configureMap() {
@@ -49,16 +65,27 @@ class MapViewController: UIViewController {
         view.addSubview(naverMapView)
     }
     
+    func configureTextField() {
+        naverMapView.addSubview(searchTextField)
+        
+        searchTextField.snp.makeConstraints {
+            $0.top.equalTo(view.snp.top).offset(60)
+            $0.left.equalTo(view.snp.left).offset(10)
+            $0.right.equalTo(view.snp.right).offset(-10)
+        }
+    }
+    
     func setLocationInfo() {
         mapViewModel.movedCurrentLocation.sink { [weak self] location in
             guard let self = self, let location = location else { return }
             
             let cameraInfo = NMFCameraUpdate(scrollTo: NMGLatLng(lat: location.coordinate.latitude, lng: location.coordinate.longitude))
+            cameraInfo.animation = .easeIn
             naverMapView.mapView.moveCamera(cameraInfo)
             
-            let marker = NMFMarker()
-            marker.position = NMGLatLng(lat: location.coordinate.latitude, lng: location.coordinate.longitude)
-            marker.mapView = self.naverMapView.mapView
+//            let marker = NMFMarker()
+//            marker.position = NMGLatLng(lat: location.coordinate.latitude, lng: location.coordinate.longitude)
+//            marker.mapView = self.naverMapView.mapView
         }
         .store(in: &cancellables)
     }
