@@ -68,6 +68,9 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
         
         configureUI()
+        Task {
+            try await mapViewModel.searchPlace()
+        }
     }
     
     func configureUI() {
