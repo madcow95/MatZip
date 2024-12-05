@@ -57,11 +57,11 @@ class MapViewModel: NSObject {
               (200...299).contains(httpResponse.statusCode) else {
             throw NSError(domain: "Invalid Response", code: -2)
         }
-        print(httpResponse.statusCode)
-        if let jsonString = String(data: data, encoding: .utf8) {
-            print(jsonString)
+        do {
+            let resData = try JSONDecoder().decode(Place.self, from: data)
+            print(resData.display)
+        } catch {
+            print(error.localizedDescription)
         }
-        let resData = try JSONDecoder().decode(Place.self, from: data)
-        print(resData.places)
     }
 }

@@ -28,7 +28,7 @@ class CategoryCell: UICollectionViewCell {
     
     private func setupUI() {
         contentView.layer.cornerRadius = 15
-        contentView.backgroundColor = .systemGray6
+        contentView.backgroundColor = .systemGreen
         
         contentView.addSubview(titleLabel)
         titleLabel.snp.makeConstraints {
