@@ -31,7 +31,7 @@ class MapViewController: UIViewController {
         
         return textField
     }()
-    private let categories = ["전체", "한식", "중식", "일식", "양식", "카페", "aaa", "bbb", "ccc", "ddd", "eee", "fff"]
+    private let categories = ["한식", "중식", "일식", "양식", "카페", "aaa", "bbb", "ccc", "ddd", "eee", "fff"]
     private lazy var categoryButtons: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -46,6 +46,7 @@ class MapViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.isScrollEnabled = true
+        collectionView.isUserInteractionEnabled = true
         
         return collectionView
     }()
@@ -68,14 +69,13 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
         
         configureUI()
+        Task {
+            try await mapViewModel.searchPlace()
+        }
     }
     
     func configureUI() {
         configureMap()
-        
-        view.bringSubviewToFront(searchTextField)
-        view.bringSubviewToFront(categoryButtons)
-        
         configureTextField()
         configureCategoryButtons()
     }
@@ -108,7 +108,7 @@ class MapViewController: UIViewController {
         
         categoryButtons.snp.makeConstraints {
             $0.top.equalTo(searchTextField.snp.bottom).offset(8)
-            $0.leading.trailing.equalToSuperview()
+            $0.left.right.equalToSuperview()
             $0.height.equalTo(35)
         }
     }
@@ -149,5 +149,9 @@ extension MapViewController: UICollectionViewDelegate, UICollectionViewDataSourc
         let width = category.size(withAttributes: [.font: UIFont.systemFont(ofSize: 14)]).width + 40
         
         return CGSize(width: width, height: 35)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(categories[indexPath.item])
     }
 }

@@ -27,7 +27,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         settingView.tabBarItem = UITabBarItem(title: "내 정보", image: UIImage(systemName: "person.fill"), selectedImage: nil)
 
         tabController.viewControllers = [mapView, communityView, settingView]
-        tabController.tabBar.tintColor = .systemBlue
+        tabController.tabBar.tintColor = .systemGreen
         tabController.tabBar.backgroundColor = .white
         
         window.rootViewController = UINavigationController(rootViewController: tabController)
