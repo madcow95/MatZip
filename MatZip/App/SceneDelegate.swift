@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let communityView = UINavigationController(rootViewController: CommunityViewController())
         communityView.tabBarItem = UITabBarItem(title: "커뮤니티", image: UIImage(systemName: "shareplay"), selectedImage: nil)
         
-        let settingView = UINavigationController(rootViewController: CommunityViewController())
+        let settingView = UINavigationController(rootViewController: MyPageViewController())
         settingView.tabBarItem = UITabBarItem(title: "내 정보", image: UIImage(systemName: "person.fill"), selectedImage: nil)
 
         tabController.viewControllers = [mapView, communityView, settingView]
