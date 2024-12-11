@@ -100,6 +100,7 @@ class MapViewController: UIViewController {
             $0.top.equalTo(view.snp.top).offset(60)
             $0.left.equalTo(view.snp.left).offset(10)
             $0.right.equalTo(view.snp.right).offset(-10)
+            
         }
     }
     
