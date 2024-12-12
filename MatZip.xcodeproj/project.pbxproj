@@ -6,59 +6,41 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		CDBD3F882CF6FC430032E343 /* NMapsMap in Frameworks */ = {isa = PBXBuildFile; productRef = CDBD3F872CF6FC430032E343 /* NMapsMap */; };
-		CDBD3F902CF6FD020032E343 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CDBD3F8F2CF6FD020032E343 /* SnapKit */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
-		CDBD3F692CF6FBB60032E343 /* PBXContainerItemProxy */ = {
+		CDF9036D2D0ADBDE00593BE3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CDBD3F472CF6FBB50032E343 /* Project object */;
+			containerPortal = CDF903522D0ADBDC00593BE3 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CDBD3F4E2CF6FBB50032E343;
+			remoteGlobalIDString = CDF903592D0ADBDC00593BE3;
 			remoteInfo = MatZip;
 		};
-		CDBD3F732CF6FBB60032E343 /* PBXContainerItemProxy */ = {
+		CDF903772D0ADBDE00593BE3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CDBD3F472CF6FBB50032E343 /* Project object */;
+			containerPortal = CDF903522D0ADBDC00593BE3 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CDBD3F4E2CF6FBB50032E343;
+			remoteGlobalIDString = CDF903592D0ADBDC00593BE3;
 			remoteInfo = MatZip;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CDBD3F4F2CF6FBB50032E343 /* MatZip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatZip.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDBD3F682CF6FBB60032E343 /* MatZipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatZipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDBD3F722CF6FBB60032E343 /* MatZipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatZipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDF9035A2D0ADBDC00593BE3 /* MatZip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatZip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDF9036C2D0ADBDE00593BE3 /* MatZipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatZipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDF903762D0ADBDE00593BE3 /* MatZipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatZipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		CDBD3F7A2CF6FBB60032E343 /* Exceptions for "MatZip" folder in "MatZip" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = CDBD3F4E2CF6FBB50032E343 /* MatZip */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		CDBD3F512CF6FBB50032E343 /* MatZip */ = {
+		CDF9035C2D0ADBDC00593BE3 /* MatZip */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				CDBD3F7A2CF6FBB60032E343 /* Exceptions for "MatZip" folder in "MatZip" target */,
-			);
 			path = MatZip;
 			sourceTree = "<group>";
 		};
-		CDBD3F6B2CF6FBB60032E343 /* MatZipTests */ = {
+		CDF9036F2D0ADBDE00593BE3 /* MatZipTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = MatZipTests;
 			sourceTree = "<group>";
 		};
-		CDBD3F752CF6FBB60032E343 /* MatZipUITests */ = {
+		CDF903792D0ADBDE00593BE3 /* MatZipUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = MatZipUITests;
 			sourceTree = "<group>";
@@ -66,23 +48,21 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CDBD3F4C2CF6FBB50032E343 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CDBD3F882CF6FC430032E343 /* NMapsMap in Frameworks */,
-				CDBD3F902CF6FD020032E343 /* SnapKit in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CDBD3F652CF6FBB60032E343 /* Frameworks */ = {
+		CDF903572D0ADBDC00593BE3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CDBD3F6F2CF6FBB60032E343 /* Frameworks */ = {
+		CDF903692D0ADBDE00593BE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDF903732D0ADBDE00593BE3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -92,22 +72,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CDBD3F462CF6FBB50032E343 = {
+		CDF903512D0ADBDC00593BE3 = {
 			isa = PBXGroup;
 			children = (
-				CDBD3F512CF6FBB50032E343 /* MatZip */,
-				CDBD3F6B2CF6FBB60032E343 /* MatZipTests */,
-				CDBD3F752CF6FBB60032E343 /* MatZipUITests */,
-				CDBD3F502CF6FBB50032E343 /* Products */,
+				CDF9035C2D0ADBDC00593BE3 /* MatZip */,
+				CDF9036F2D0ADBDE00593BE3 /* MatZipTests */,
+				CDF903792D0ADBDE00593BE3 /* MatZipUITests */,
+				CDF9035B2D0ADBDC00593BE3 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CDBD3F502CF6FBB50032E343 /* Products */ = {
+		CDF9035B2D0ADBDC00593BE3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CDBD3F4F2CF6FBB50032E343 /* MatZip.app */,
-				CDBD3F682CF6FBB60032E343 /* MatZipTests.xctest */,
-				CDBD3F722CF6FBB60032E343 /* MatZipUITests.xctest */,
+				CDF9035A2D0ADBDC00593BE3 /* MatZip.app */,
+				CDF9036C2D0ADBDE00593BE3 /* MatZipTests.xctest */,
+				CDF903762D0ADBDE00593BE3 /* MatZipUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,140 +95,134 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CDBD3F4E2CF6FBB50032E343 /* MatZip */ = {
+		CDF903592D0ADBDC00593BE3 /* MatZip */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CDBD3F7B2CF6FBB60032E343 /* Build configuration list for PBXNativeTarget "MatZip" */;
+			buildConfigurationList = CDF903802D0ADBDE00593BE3 /* Build configuration list for PBXNativeTarget "MatZip" */;
 			buildPhases = (
-				CDBD3F4B2CF6FBB50032E343 /* Sources */,
-				CDBD3F4C2CF6FBB50032E343 /* Frameworks */,
-				CDBD3F4D2CF6FBB50032E343 /* Resources */,
+				CDF903562D0ADBDC00593BE3 /* Sources */,
+				CDF903572D0ADBDC00593BE3 /* Frameworks */,
+				CDF903582D0ADBDC00593BE3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				CDBD3F512CF6FBB50032E343 /* MatZip */,
+				CDF9035C2D0ADBDC00593BE3 /* MatZip */,
 			);
 			name = MatZip;
 			packageProductDependencies = (
-				CDBD3F872CF6FC430032E343 /* NMapsMap */,
-				CDBD3F8F2CF6FD020032E343 /* SnapKit */,
 			);
 			productName = MatZip;
-			productReference = CDBD3F4F2CF6FBB50032E343 /* MatZip.app */;
+			productReference = CDF9035A2D0ADBDC00593BE3 /* MatZip.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CDBD3F672CF6FBB60032E343 /* MatZipTests */ = {
+		CDF9036B2D0ADBDE00593BE3 /* MatZipTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CDBD3F802CF6FBB60032E343 /* Build configuration list for PBXNativeTarget "MatZipTests" */;
+			buildConfigurationList = CDF903832D0ADBDE00593BE3 /* Build configuration list for PBXNativeTarget "MatZipTests" */;
 			buildPhases = (
-				CDBD3F642CF6FBB60032E343 /* Sources */,
-				CDBD3F652CF6FBB60032E343 /* Frameworks */,
-				CDBD3F662CF6FBB60032E343 /* Resources */,
+				CDF903682D0ADBDE00593BE3 /* Sources */,
+				CDF903692D0ADBDE00593BE3 /* Frameworks */,
+				CDF9036A2D0ADBDE00593BE3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CDBD3F6A2CF6FBB60032E343 /* PBXTargetDependency */,
+				CDF9036E2D0ADBDE00593BE3 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				CDBD3F6B2CF6FBB60032E343 /* MatZipTests */,
+				CDF9036F2D0ADBDE00593BE3 /* MatZipTests */,
 			);
 			name = MatZipTests;
 			packageProductDependencies = (
 			);
 			productName = MatZipTests;
-			productReference = CDBD3F682CF6FBB60032E343 /* MatZipTests.xctest */;
+			productReference = CDF9036C2D0ADBDE00593BE3 /* MatZipTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CDBD3F712CF6FBB60032E343 /* MatZipUITests */ = {
+		CDF903752D0ADBDE00593BE3 /* MatZipUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CDBD3F832CF6FBB60032E343 /* Build configuration list for PBXNativeTarget "MatZipUITests" */;
+			buildConfigurationList = CDF903862D0ADBDE00593BE3 /* Build configuration list for PBXNativeTarget "MatZipUITests" */;
 			buildPhases = (
-				CDBD3F6E2CF6FBB60032E343 /* Sources */,
-				CDBD3F6F2CF6FBB60032E343 /* Frameworks */,
-				CDBD3F702CF6FBB60032E343 /* Resources */,
+				CDF903722D0ADBDE00593BE3 /* Sources */,
+				CDF903732D0ADBDE00593BE3 /* Frameworks */,
+				CDF903742D0ADBDE00593BE3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CDBD3F742CF6FBB60032E343 /* PBXTargetDependency */,
+				CDF903782D0ADBDE00593BE3 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				CDBD3F752CF6FBB60032E343 /* MatZipUITests */,
+				CDF903792D0ADBDE00593BE3 /* MatZipUITests */,
 			);
 			name = MatZipUITests;
 			packageProductDependencies = (
 			);
 			productName = MatZipUITests;
-			productReference = CDBD3F722CF6FBB60032E343 /* MatZipUITests.xctest */;
+			productReference = CDF903762D0ADBDE00593BE3 /* MatZipUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CDBD3F472CF6FBB50032E343 /* Project object */ = {
+		CDF903522D0ADBDC00593BE3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
-					CDBD3F4E2CF6FBB50032E343 = {
+					CDF903592D0ADBDC00593BE3 = {
 						CreatedOnToolsVersion = 16.1;
 					};
-					CDBD3F672CF6FBB60032E343 = {
+					CDF9036B2D0ADBDE00593BE3 = {
 						CreatedOnToolsVersion = 16.1;
-						TestTargetID = CDBD3F4E2CF6FBB50032E343;
+						TestTargetID = CDF903592D0ADBDC00593BE3;
 					};
-					CDBD3F712CF6FBB60032E343 = {
+					CDF903752D0ADBDE00593BE3 = {
 						CreatedOnToolsVersion = 16.1;
-						TestTargetID = CDBD3F4E2CF6FBB50032E343;
+						TestTargetID = CDF903592D0ADBDC00593BE3;
 					};
 				};
 			};
-			buildConfigurationList = CDBD3F4A2CF6FBB50032E343 /* Build configuration list for PBXProject "MatZip" */;
+			buildConfigurationList = CDF903552D0ADBDC00593BE3 /* Build configuration list for PBXProject "MatZip" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = CDBD3F462CF6FBB50032E343;
+			mainGroup = CDF903512D0ADBDC00593BE3;
 			minimizedProjectReferenceProxies = 1;
-			packageReferences = (
-				CDBD3F862CF6FC430032E343 /* XCRemoteSwiftPackageReference "SPM-NMapsMap" */,
-				CDBD3F8E2CF6FD020032E343 /* XCRemoteSwiftPackageReference "SnapKit" */,
-			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = CDBD3F502CF6FBB50032E343 /* Products */;
+			productRefGroup = CDF9035B2D0ADBDC00593BE3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CDBD3F4E2CF6FBB50032E343 /* MatZip */,
-				CDBD3F672CF6FBB60032E343 /* MatZipTests */,
-				CDBD3F712CF6FBB60032E343 /* MatZipUITests */,
+				CDF903592D0ADBDC00593BE3 /* MatZip */,
+				CDF9036B2D0ADBDE00593BE3 /* MatZipTests */,
+				CDF903752D0ADBDE00593BE3 /* MatZipUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CDBD3F4D2CF6FBB50032E343 /* Resources */ = {
+		CDF903582D0ADBDC00593BE3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CDBD3F662CF6FBB60032E343 /* Resources */ = {
+		CDF9036A2D0ADBDE00593BE3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CDBD3F702CF6FBB60032E343 /* Resources */ = {
+		CDF903742D0ADBDE00593BE3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,21 +232,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CDBD3F4B2CF6FBB50032E343 /* Sources */ = {
+		CDF903562D0ADBDC00593BE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CDBD3F642CF6FBB60032E343 /* Sources */ = {
+		CDF903682D0ADBDE00593BE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CDBD3F6E2CF6FBB60032E343 /* Sources */ = {
+		CDF903722D0ADBDE00593BE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -282,88 +256,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CDBD3F6A2CF6FBB60032E343 /* PBXTargetDependency */ = {
+		CDF9036E2D0ADBDE00593BE3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CDBD3F4E2CF6FBB50032E343 /* MatZip */;
-			targetProxy = CDBD3F692CF6FBB60032E343 /* PBXContainerItemProxy */;
+			target = CDF903592D0ADBDC00593BE3 /* MatZip */;
+			targetProxy = CDF9036D2D0ADBDE00593BE3 /* PBXContainerItemProxy */;
 		};
-		CDBD3F742CF6FBB60032E343 /* PBXTargetDependency */ = {
+		CDF903782D0ADBDE00593BE3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CDBD3F4E2CF6FBB50032E343 /* MatZip */;
-			targetProxy = CDBD3F732CF6FBB60032E343 /* PBXContainerItemProxy */;
+			target = CDF903592D0ADBDC00593BE3 /* MatZip */;
+			targetProxy = CDF903772D0ADBDE00593BE3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		CDBD3F7C2CF6FBB60032E343 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N954XS4D2X;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MatZip/Info.plist;
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "항상 위치 접근이 가능한지 확인(상세 설명 작성해야함)";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "사용자의 위치권한이 필요합니다.(상세 설명 작성해야함)";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.madcow.MatZip;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Debug;
-		};
-		CDBD3F7D2CF6FBB60032E343 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N954XS4D2X;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MatZip/Info.plist;
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "항상 위치 접근이 가능한지 확인(상세 설명 작성해야함)";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "사용자의 위치권한이 필요합니다.(상세 설명 작성해야함)";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.madcow.MatZip;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-		CDBD3F7E2CF6FBB60032E343 /* Debug */ = {
+		CDF9037E2D0ADBDE00593BE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -426,7 +332,7 @@
 			};
 			name = Debug;
 		};
-		CDBD3F7F2CF6FBB60032E343 /* Release */ = {
+		CDF9037F2D0ADBDE00593BE3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -482,7 +388,65 @@
 			};
 			name = Release;
 		};
-		CDBD3F812CF6FBB60032E343 /* Debug */ = {
+		CDF903812D0ADBDE00593BE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MatZip/Preview Content\"";
+				DEVELOPMENT_TEAM = N954XS4D2X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.madcow.MatZip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CDF903822D0ADBDE00593BE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MatZip/Preview Content\"";
+				DEVELOPMENT_TEAM = N954XS4D2X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.madcow.MatZip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CDF903842D0ADBDE00593BE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -501,7 +465,7 @@
 			};
 			name = Debug;
 		};
-		CDBD3F822CF6FBB60032E343 /* Release */ = {
+		CDF903852D0ADBDE00593BE3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -520,7 +484,7 @@
 			};
 			name = Release;
 		};
-		CDBD3F842CF6FBB60032E343 /* Debug */ = {
+		CDF903872D0ADBDE00593BE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -537,7 +501,7 @@
 			};
 			name = Debug;
 		};
-		CDBD3F852CF6FBB60032E343 /* Release */ = {
+		CDF903882D0ADBDE00593BE3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -557,75 +521,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CDBD3F4A2CF6FBB50032E343 /* Build configuration list for PBXProject "MatZip" */ = {
+		CDF903552D0ADBDC00593BE3 /* Build configuration list for PBXProject "MatZip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CDBD3F7E2CF6FBB60032E343 /* Debug */,
-				CDBD3F7F2CF6FBB60032E343 /* Release */,
+				CDF9037E2D0ADBDE00593BE3 /* Debug */,
+				CDF9037F2D0ADBDE00593BE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CDBD3F7B2CF6FBB60032E343 /* Build configuration list for PBXNativeTarget "MatZip" */ = {
+		CDF903802D0ADBDE00593BE3 /* Build configuration list for PBXNativeTarget "MatZip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CDBD3F7C2CF6FBB60032E343 /* Debug */,
-				CDBD3F7D2CF6FBB60032E343 /* Release */,
+				CDF903812D0ADBDE00593BE3 /* Debug */,
+				CDF903822D0ADBDE00593BE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CDBD3F802CF6FBB60032E343 /* Build configuration list for PBXNativeTarget "MatZipTests" */ = {
+		CDF903832D0ADBDE00593BE3 /* Build configuration list for PBXNativeTarget "MatZipTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CDBD3F812CF6FBB60032E343 /* Debug */,
-				CDBD3F822CF6FBB60032E343 /* Release */,
+				CDF903842D0ADBDE00593BE3 /* Debug */,
+				CDF903852D0ADBDE00593BE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CDBD3F832CF6FBB60032E343 /* Build configuration list for PBXNativeTarget "MatZipUITests" */ = {
+		CDF903862D0ADBDE00593BE3 /* Build configuration list for PBXNativeTarget "MatZipUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CDBD3F842CF6FBB60032E343 /* Debug */,
-				CDBD3F852CF6FBB60032E343 /* Release */,
+				CDF903872D0ADBDE00593BE3 /* Debug */,
+				CDF903882D0ADBDE00593BE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		CDBD3F862CF6FC430032E343 /* XCRemoteSwiftPackageReference "SPM-NMapsMap" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/navermaps/SPM-NMapsMap";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.20.0;
-			};
-		};
-		CDBD3F8E2CF6FD020032E343 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.7.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		CDBD3F872CF6FC430032E343 /* NMapsMap */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CDBD3F862CF6FC430032E343 /* XCRemoteSwiftPackageReference "SPM-NMapsMap" */;
-			productName = NMapsMap;
-		};
-		CDBD3F8F2CF6FD020032E343 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CDBD3F8E2CF6FD020032E343 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = CDBD3F472CF6FBB50032E343 /* Project object */;
+	rootObject = CDF903522D0ADBDC00593BE3 /* Project object */;
 }
