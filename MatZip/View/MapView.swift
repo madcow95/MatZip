@@ -7,12 +7,14 @@
 
 import SwiftUI
 import MapKit
+import Combine
 
 struct MapView: View {
-    @StateObject private var mapViewModel = MapViewModel(locationService: LocationService())
+    @StateObject private var mapViewModel = MapViewModel(/*locationService: LocationService()*/)
+    @State private var cancellables = Set<AnyCancellable>()
     @State private var camera: MapCameraPosition = .region(MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: 37.5665, longitude: 126.9780),
-        span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
+        span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
     ))
     @State private var searchText: String = ""
     private let categories: [String] = ["한식", "일식", "양식", "중식", "디저트", "카페", "인기", "최신", "아몰라"]
@@ -20,7 +22,8 @@ struct MapView: View {
     var body: some View {
         ZStack(alignment: .top) {
             Map(position: $camera) {
-                
+                Marker("내 위치", coordinate: mapViewModel.currentLocation.coordinate)
+                    .tint(.green)
             }
             .mapStyle(.standard)
             .mapControls {
@@ -60,11 +63,15 @@ struct MapView: View {
             }
         }
         .onAppear {
-            
-            let currentLocation: MapCameraPosition = .region(MKCoordinateRegion(
-                center: CLLocationCoordinate2D(latitude: 37.5665, longitude: 126.9780),
-                span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
-            )
+            mapViewModel.$currentLocation
+                .dropFirst()
+                .sink { location in
+                    self.camera = .region(MKCoordinateRegion(
+                        center: CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude),
+                        span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+                    )
+                }
+                .store(in: &cancellables)
         }
     }
 }

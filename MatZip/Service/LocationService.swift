@@ -8,7 +8,7 @@
 import CoreLocation
 import Combine
 
-class LocationService: NSObject, LocationManager, ObservableObject {
+class LocationService: NSObject, LocationManager {
     private let locationManager = CLLocationManager()
     private var authResult: ((Bool) -> Void)?
     @Published var location: CLLocation?
@@ -21,10 +21,6 @@ class LocationService: NSObject, LocationManager, ObservableObject {
         super.init()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
-    }
-    
-    func getLocationManager() -> CLLocationManager {
-        return self.locationManager
     }
     
     func requestLocationAuth(completion: @escaping (Bool) -> Void) {

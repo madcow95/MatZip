@@ -8,19 +8,16 @@
 import Foundation
 import CoreLocation
 import Combine
+import SwiftUICore
 
-class MapViewModel: NSObject, ObservableObject {
-    private let locationService: LocationService
+class MapViewModel: ObservableObject {
+    private var locationService = LocationService()
     @Published var currentLocation: CLLocation = CLLocation(latitude: 0, longitude: 0)
     
-    init(locationService: LocationService) {
-        self.locationService = locationService
-        super.init()
-        guard let currentLocation = locationService.location else {
-            print("no location")
-            return
-        }
-        self.currentLocation = currentLocation
+    init() {
+        locationService.$location
+            .compactMap { $0 }
+            .assign(to: &$currentLocation)
     }
     
     func requestLocationAuth(completion: @escaping (Bool) -> Void) {
