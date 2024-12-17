@@ -9,16 +9,18 @@ import Foundation
 import CoreLocation
 import Combine
 
-class MapViewModel: NSObject {
+class MapViewModel: NSObject, ObservableObject {
     private let locationService: LocationService
-    var movedCurrentLocation: AnyPublisher<CLLocation?, Never> {
-        return locationService.movingCurrentLocation
-    }
+    @Published var currentLocation: CLLocation = CLLocation(latitude: 0, longitude: 0)
     
     init(locationService: LocationService) {
         self.locationService = locationService
         super.init()
-        
+        guard let currentLocation = locationService.location else {
+            print("no location")
+            return
+        }
+        self.currentLocation = currentLocation
     }
     
     func requestLocationAuth(completion: @escaping (Bool) -> Void) {

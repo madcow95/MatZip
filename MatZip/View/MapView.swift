@@ -9,7 +9,7 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
-    private let mapViewModel = MapViewModel(locationService: LocationService())
+    @StateObject private var mapViewModel = MapViewModel(locationService: LocationService())
     @State private var camera: MapCameraPosition = .region(MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: 37.5665, longitude: 126.9780),
         span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
@@ -22,6 +22,13 @@ struct MapView: View {
             Map(position: $camera) {
                 
             }
+            .mapStyle(.standard)
+            .mapControls {
+                MapUserLocationButton()
+                    .buttonBorderShape(.circle)
+                    .controlSize(.regular)
+                    .tint(.green)
+            }
             
             VStack {
                 TextField("검색어를 입력하세요", text: $searchText)
@@ -29,6 +36,8 @@ struct MapView: View {
                     .background(Color.white)
                     .cornerRadius(10)
                     .padding()
+                    .padding(.top, -6)
+                    .padding(.trailing, 40)
                     .shadow(radius: 5)
                 
                 ScrollView(.horizontal) {
@@ -41,12 +50,21 @@ struct MapView: View {
                             .padding(.horizontal, 12)
                             .background(Color.white)
                             .clipShape(Capsule())
+                            .tint(.orange)
                         }
                     }
                     .padding(.horizontal)
                 }
+                .padding(.top, -10)
                 .scrollIndicators(.hidden)
             }
+        }
+        .onAppear {
+            
+            let currentLocation: MapCameraPosition = .region(MKCoordinateRegion(
+                center: CLLocationCoordinate2D(latitude: 37.5665, longitude: 126.9780),
+                span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
+            )
         }
     }
 }
