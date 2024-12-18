@@ -41,6 +41,39 @@ class LocationService: NSObject, LocationManager {
     func getCurrentLocation() {
         locationManager.requestLocation()
     }
+    
+    func searchPlaceBy(category: String) async throws -> Place? {
+        var components = URLComponents(string: "https://openapi.naver.com/v1/search/local.json")
+        components?.queryItems = [
+            URLQueryItem(name: "query", value: "\(category) 맛집"),
+            URLQueryItem(name: "display", value: String(100)),
+            URLQueryItem(name: "start", value: String(1)),
+            URLQueryItem(name: "sort", value: "random")
+        ]
+        
+        guard let url = components?.url else {
+            throw NSError(domain: "Invalid URL", code: -1)
+        }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        request.addValue(clientID, forHTTPHeaderField: "X-Naver-Client-Id")
+        request.addValue(clientSecret, forHTTPHeaderField: "X-Naver-Client-Secret")
+        
+        let (data, response) = try await URLSession.shared.data(for: request)
+        
+        guard let httpResponse = response as? HTTPURLResponse,
+              (200...299).contains(httpResponse.statusCode) else {
+            throw NSError(domain: "Invalid Response", code: -2)
+        }
+        do {
+            return try JSONDecoder().decode(Place.self, from: data)
+        } catch {
+            print(error.localizedDescription)
+        }
+        
+        return nil
+    }
 }
 
 extension LocationService: CLLocationManagerDelegate {

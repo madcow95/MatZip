@@ -10,7 +10,7 @@ import MapKit
 import Combine
 
 struct MapView: View {
-    @StateObject private var mapViewModel = MapViewModel(/*locationService: LocationService()*/)
+    @StateObject private var mapViewModel = MapViewModel()
     @State private var cancellables = Set<AnyCancellable>()
     @State private var camera: MapCameraPosition = .region(MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: 37.5665, longitude: 126.9780),
@@ -22,8 +22,10 @@ struct MapView: View {
     var body: some View {
         ZStack(alignment: .top) {
             Map(position: $camera) {
-                Marker("내 위치", coordinate: mapViewModel.currentLocation.coordinate)
-                    .tint(.green)
+                ForEach(mapViewModel.places, id: \.self) { place in
+                    Marker(place.title, coordinate: place.coordinate)
+                        .tint(.red)
+                }
             }
             .mapStyle(.standard)
             .mapControls {
@@ -47,7 +49,9 @@ struct MapView: View {
                     HStack {
                         ForEach(categories, id: \.self) { category in
                             Button(category) {
-                                
+                                Task {
+                                    await mapViewModel.searchPlaceBy(category: category)
+                                }
                             }
                             .frame(height: 30)
                             .padding(.horizontal, 12)
