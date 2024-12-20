@@ -25,7 +25,7 @@ struct MatZipApp: App {
 
     var body: some Scene {
         WindowGroup {
-            MapView()
+            MainView()
         }
         .modelContainer(sharedModelContainer)
     }
